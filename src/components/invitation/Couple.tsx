@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const Instagram = (props: React.SVGProps<SVGSVGElement>) => (
   <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
