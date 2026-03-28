@@ -4,27 +4,27 @@ import { Heart } from 'lucide-react';
 
 const milestones = [
   {
-    year: '2018',
+    year: '2019',
     title: 'Pertemuan Pertama',
-    description: 'Rizky dan Anisa pertama kali bertemu saat Orientasi Mahasiswa Baru di Universitas Indonesia. Sebuah pertemuan sederhana yang ternyata menjadi awal dari segalanya.',
+    description: 'Ichsan dan Wulan pertama kali bertemu di sebuah acara keluarga bersama. Sebuah pertemuan sederhana yang ternyata menjadi awal dari segalanya.',
     emoji: '🌟',
   },
   {
-    year: '2020',
+    year: '2021',
     title: 'Resmi Berpacaran',
-    description: 'Setelah dua tahun bersahabat dan saling mengenal lebih dalam, Rizky akhirnya memberanikan diri untuk mengungkapkan perasaannya. Anisa pun menerima dengan senyum manisnya.',
+    description: 'Setelah dua tahun bersahabat dan saling mengenal lebih dalam, Ichsan akhirnya memberanikan diri untuk mengungkapkan perasaannya. Wulan pun menerima dengan senyum manisnya.',
     emoji: '💕',
   },
   {
-    year: '2022',
+    year: '2023',
     title: 'Lamaran',
-    description: 'Dengan restu kedua keluarga, Rizky melamar Anisa dalam sebuah acara lamaran yang sederhana namun penuh keharuan dan kebahagiaan.',
+    description: 'Dengan restu kedua keluarga, Ichsan melamar Wulan dalam sebuah acara lamaran yang sederhana namun penuh keharuan dan kebahagiaan.',
     emoji: '💍',
   },
   {
     year: '2025',
     title: 'Pernikahan',
-    description: 'Atas ridho Allah SWT dan restu kedua orang tua, Rizky dan Anisa akan menyempurnakan separuh agama mereka dan memulai babak baru kehidupan bersama.',
+    description: 'Atas ridho Allah SWT dan restu kedua orang tua, Ichsan dan Wulan akan menyempurnakan separuh agama mereka dan memulai babak baru kehidupan bersama.',
     emoji: '👰🤵',
   },
 ];

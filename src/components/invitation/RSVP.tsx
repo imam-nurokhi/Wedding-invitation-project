@@ -31,14 +31,11 @@ export default function RSVP({ guestName }: RSVPProps) {
   const onSubmit = async (data: RSVPFormData) => {
     setIsLoading(true);
     try {
-      const response = await fetch('/api/rsvp', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-      if (response.ok) {
-        setIsSubmitted(true);
-      }
+      await new Promise(resolve => setTimeout(resolve, 600));
+      const stored = JSON.parse(localStorage.getItem('wedding_rsvp') || '[]');
+      stored.push({ ...data, id: Date.now().toString(), date: new Date().toISOString() });
+      localStorage.setItem('wedding_rsvp', JSON.stringify(stored));
+      setIsSubmitted(true);
     } catch (error) {
       console.error('Error submitting RSVP:', error);
     } finally {
@@ -62,7 +59,7 @@ export default function RSVP({ guestName }: RSVPProps) {
             RSVP
           </h2>
           <p className="font-cormorant text-dark-brown/60 text-lg">
-            Mohon konfirmasi kehadiran Anda sebelum 10 Juni 2025
+            Mohon konfirmasi kehadiran Anda sebelum 8 November 2025
           </p>
         </motion.div>
 

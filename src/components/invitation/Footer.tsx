@@ -12,17 +12,17 @@ export default function Footer() {
         className="max-w-md mx-auto"
       >
         <p className="font-great-vibes text-3xl text-rose-gold mb-4">
-          Rizky &amp; Anisa
+          Ichsan &amp; Wulan
         </p>
         <div className="w-16 h-px bg-rose-gold/40 mx-auto mb-4" />
         <p className="font-montserrat text-cream/60 text-xs tracking-wide flex items-center justify-center gap-1 mb-3">
-          Made with <Heart className="w-3 h-3 text-rose-gold fill-rose-gold mx-0.5" /> for Rizky &amp; Anisa
+          Made with <Heart className="w-3 h-3 text-rose-gold fill-rose-gold mx-0.5" /> for Ichsan &amp; Wulan
         </p>
         <p className="font-montserrat text-cream/40 text-xs">
-          © 2025 Rizky Ahmad Fauzi &amp; Anisa Rahma Putri. All rights reserved.
+          © 2025 Muhammad Ichsan &amp; Wulan Rahayu. All rights reserved.
         </p>
         <p className="font-montserrat text-cream/30 text-xs mt-2">
-          15 Juni 2025 · Jakarta Selatan
+          2025
         </p>
       </motion.div>
     </footer>

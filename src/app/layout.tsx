@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Undangan Pernikahan Rizky & Anisa | 15 Juni 2025",
-  description: "Dengan penuh kebahagiaan, kami mengundang Anda untuk hadir dalam pernikahan Rizky Ahmad Fauzi dan Anisa Rahma Putri pada 15 Juni 2025 di Jakarta Selatan.",
-  keywords: "undangan pernikahan, wedding invitation, Rizky, Anisa, Jakarta",
+  title: "Undangan Pernikahan Ichsan & Wulan | 2025",
+  description: "Dengan penuh kebahagiaan, kami mengundang Anda untuk hadir dalam pernikahan Muhammad Ichsan dan Wulan Rahayu pada 2025.",
+  keywords: "undangan pernikahan, wedding invitation, Ichsan, Wulan",
   openGraph: {
-    title: "Undangan Pernikahan Rizky & Anisa",
-    description: "15 Juni 2025 · Jakarta Selatan",
+    title: "Undangan Pernikahan Ichsan & Wulan",
+    description: "Menyempurnakan Separuh Agama",
     type: "website",
   },
 };

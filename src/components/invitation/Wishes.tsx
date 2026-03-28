@@ -20,16 +20,15 @@ export default function Wishes() {
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
   useEffect(() => {
-    fetchWishes();
+    loadWishes();
   }, []);
 
-  const fetchWishes = async () => {
+  const loadWishes = () => {
     try {
-      const res = await fetch('/api/wishes');
-      const data = await res.json();
-      setWishes(data.reverse());
-    } catch (error) {
-      console.error('Error fetching wishes:', error);
+      const stored = JSON.parse(localStorage.getItem('wedding_wishes') || '[]') as Wish[];
+      setWishes([...stored].reverse());
+    } catch {
+      setWishes([]);
     }
   };
 
@@ -39,18 +38,21 @@ export default function Wishes() {
 
     setIsSubmitting(true);
     try {
-      const res = await fetch('/api/wishes', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, message }),
-      });
-      if (res.ok) {
-        setName('');
-        setMessage('');
-        setSubmitSuccess(true);
-        await fetchWishes();
-        setTimeout(() => setSubmitSuccess(false), 3000);
-      }
+      await new Promise(resolve => setTimeout(resolve, 400));
+      const stored = JSON.parse(localStorage.getItem('wedding_wishes') || '[]') as Wish[];
+      const newWish: Wish = {
+        id: Date.now().toString(),
+        name: name.trim(),
+        message: message.trim(),
+        date: new Date().toISOString(),
+      };
+      stored.push(newWish);
+      localStorage.setItem('wedding_wishes', JSON.stringify(stored));
+      setName('');
+      setMessage('');
+      setSubmitSuccess(true);
+      loadWishes();
+      setTimeout(() => setSubmitSuccess(false), 3000);
     } catch (error) {
       console.error('Error submitting wish:', error);
     } finally {

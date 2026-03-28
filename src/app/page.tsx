@@ -116,7 +116,7 @@ function WeddingContent() {
                   transition={{ delay: 0.6 }}
                   className="font-great-vibes text-7xl sm:text-8xl text-rose-gold leading-tight mb-2"
                 >
-                  Rizky
+                  Ichsan
                 </motion.h1>
                 
                 <motion.p
@@ -134,7 +134,7 @@ function WeddingContent() {
                   transition={{ delay: 1 }}
                   className="font-great-vibes text-7xl sm:text-8xl text-rose-gold leading-tight mb-6"
                 >
-                  Anisa
+                  Wulan
                 </motion.h1>
 
                 <motion.div
@@ -150,7 +150,7 @@ function WeddingContent() {
                   transition={{ delay: 1.4 }}
                   className="font-cormorant text-dark-brown/70 text-xl tracking-wide"
                 >
-                  Sabtu, 15 Juni 2025
+                  Sabtu, 15 November 2025
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0 }}
@@ -158,7 +158,7 @@ function WeddingContent() {
                   transition={{ delay: 1.5 }}
                   className="font-montserrat text-dark-brown/50 text-sm tracking-wider mt-1"
                 >
-                  Jakarta Selatan
+                  Jakarta
                 </motion.p>
 
                 <motion.a
