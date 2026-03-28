@@ -15,12 +15,12 @@ const dataPath = path.join(process.cwd(), 'data', 'rsvp.json');
 
 function readRsvp(): RSVPEntry[] {
   try {
-    if (!fs.existsSync(dataPath)) {
-      fs.writeFileSync(dataPath, '[]', 'utf-8');
-    }
     const data = fs.readFileSync(dataPath, 'utf-8');
     return JSON.parse(data) as RSVPEntry[];
-  } catch {
+  } catch (err: unknown) {
+    if (err && typeof err === 'object' && 'code' in err && (err as NodeJS.ErrnoException).code === 'ENOENT') {
+      return [];
+    }
     return [];
   }
 }
