@@ -109,23 +109,23 @@ export default function Events() {
           <EventCard
             type="akad"
             title="Akad Nikah"
-            date="Sabtu, 15 Juni 2025"
+            date="Sabtu, 15 November 2025"
             startTime="08:00"
             endTime="10:00"
             venue="Masjid Al-Hikmah"
-            address="Jl. Masjid No. 12, Jakarta Selatan"
-            mapsLink="https://maps.google.com/?q=Masjid+Al-Hikmah+Jakarta+Selatan"
+            address="Jakarta"
+            mapsLink="https://maps.google.com/?q=Jakarta"
             delay={0.2}
           />
           <EventCard
             type="resepsi"
             title="Resepsi Pernikahan"
-            date="Sabtu, 15 Juni 2025"
+            date="Sabtu, 15 November 2025"
             startTime="11:00"
             endTime="15:00"
-            venue="Gedung Serbaguna Al-Hikmah"
-            address="Jl. Masjid No. 14, Jakarta Selatan"
-            mapsLink="https://maps.google.com/?q=Gedung+Serbaguna+Al-Hikmah+Jakarta+Selatan"
+            venue="Gedung Serbaguna"
+            address="Jakarta"
+            mapsLink="https://maps.google.com/?q=Jakarta"
             delay={0.4}
           />
         </div>

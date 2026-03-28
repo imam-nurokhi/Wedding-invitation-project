@@ -1,68 +1,68 @@
 {
   "groom": {
-    "name": "Rizky Ahmad Fauzi",
-    "nickname": "Rizky",
-    "description": "Putra pertama dari Bapak Ahmad Fauzi dan Ibu Siti Nurhaliza",
-    "fatherName": "Bapak Ahmad Fauzi",
-    "motherName": "Ibu Siti Nurhaliza",
-    "instagram": "@rizkyahmad_"
+    "name": "Muhammad Ichsan",
+    "nickname": "Ichsan",
+    "description": "Putra pertama dari Bapak Deni Setiawan dan Ibu Endang Susilawati",
+    "fatherName": "Bapak Deni Setiawan",
+    "motherName": "Ibu Endang Susilawati",
+    "instagram": "@muhammadichsan_"
   },
   "bride": {
-    "name": "Anisa Rahma Putri",
-    "nickname": "Anisa",
-    "description": "Putri kedua dari Bapak Rahmat Hidayat dan Ibu Dewi Lestari",
-    "fatherName": "Bapak Rahmat Hidayat",
-    "motherName": "Ibu Dewi Lestari",
-    "instagram": "@anisarahmaputri"
+    "name": "Wulan Rahayu",
+    "nickname": "Wulan",
+    "description": "Putri kedua dari Bapak Agus Rahayu dan Ibu Sri Mulyani",
+    "fatherName": "Bapak Agus Rahayu",
+    "motherName": "Ibu Sri Mulyani",
+    "instagram": "@wulanrahayu_"
   },
   "akad": {
-    "date": "Sabtu, 15 Juni 2025",
+    "date": "Sabtu, 15 November 2025",
     "startTime": "08:00",
     "endTime": "10:00",
     "venue": "Masjid Al-Hikmah",
-    "address": "Jl. Masjid No. 12, Jakarta Selatan",
-    "mapsLink": "https://maps.google.com/?q=Masjid+Al-Hikmah+Jakarta+Selatan"
+    "address": "Jakarta",
+    "mapsLink": "https://maps.google.com/?q=Jakarta"
   },
   "reception": {
-    "date": "Sabtu, 15 Juni 2025",
+    "date": "Sabtu, 15 November 2025",
     "startTime": "11:00",
     "endTime": "15:00",
-    "venue": "Gedung Serbaguna Al-Hikmah",
-    "address": "Jl. Masjid No. 14, Jakarta Selatan",
-    "mapsLink": "https://maps.google.com/?q=Gedung+Serbaguna+Al-Hikmah+Jakarta+Selatan"
+    "venue": "Gedung Serbaguna",
+    "address": "Jakarta",
+    "mapsLink": "https://maps.google.com/?q=Jakarta"
   },
   "loveStory": [
     {
-      "year": "2018",
+      "year": "2019",
       "title": "Pertemuan Pertama",
-      "description": "Rizky dan Anisa pertama kali bertemu saat Orientasi Mahasiswa Baru di Universitas Indonesia. Sebuah pertemuan sederhana yang ternyata menjadi awal dari segalanya."
+      "description": "Ichsan dan Wulan pertama kali bertemu di sebuah acara keluarga bersama."
     },
     {
-      "year": "2020",
+      "year": "2021",
       "title": "Resmi Berpacaran",
-      "description": "Setelah dua tahun bersahabat dan saling mengenal lebih dalam, Rizky akhirnya memberanikan diri untuk mengungkapkan perasaannya. Anisa pun menerima dengan senyum manisnya."
+      "description": "Setelah dua tahun bersahabat, Ichsan mengungkapkan perasaannya dan Wulan menerimanya."
     },
     {
-      "year": "2022",
+      "year": "2023",
       "title": "Lamaran",
-      "description": "Dengan restu kedua keluarga, Rizky melamar Anisa dalam sebuah acara lamaran yang sederhana namun penuh keharuan dan kebahagiaan."
+      "description": "Dengan restu kedua keluarga, Ichsan melamar Wulan dalam acara yang penuh haru."
     },
     {
       "year": "2025",
       "title": "Pernikahan",
-      "description": "Atas ridho Allah SWT dan restu kedua orang tua, Rizky dan Anisa akan menyempurnakan separuh agama mereka dan memulai babak baru kehidupan bersama."
+      "description": "Ichsan dan Wulan menyempurnakan separuh agama dan memulai babak baru kehidupan bersama."
     }
   ],
   "bankAccounts": [
     {
       "bank": "Bank BCA",
       "accountNumber": "1234567890",
-      "accountName": "Rizky Ahmad Fauzi"
+      "accountName": "Muhammad Ichsan"
     },
     {
       "bank": "Bank Mandiri",
       "accountNumber": "0987654321",
-      "accountName": "Anisa Rahma Putri"
+      "accountName": "Wulan Rahayu"
     }
   ]
 }

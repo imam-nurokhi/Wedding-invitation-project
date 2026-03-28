@@ -120,11 +120,11 @@ export default function Cover({ guestName, onOpen }: CoverProps) {
               className="mb-2"
             >
               <h1 className="font-great-vibes text-5xl sm:text-6xl text-rose-gold leading-tight">
-                Rizky
+                Ichsan
               </h1>
               <p className="font-cormorant text-dark-brown/60 text-lg my-1">&amp;</p>
               <h1 className="font-great-vibes text-5xl sm:text-6xl text-rose-gold leading-tight">
-                Anisa
+                Wulan
               </h1>
             </motion.div>
 
@@ -135,7 +135,7 @@ export default function Cover({ guestName, onOpen }: CoverProps) {
               transition={{ delay: 1.5, duration: 0.8 }}
               className="font-cormorant text-dark-brown/70 text-lg mt-4 mb-8 tracking-wide"
             >
-              15 . 06 . 2025
+              15 . 11 . 2025
             </motion.p>
 
             {/* Open button */}

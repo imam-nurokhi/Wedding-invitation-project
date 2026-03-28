@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const WEDDING_DATE = new Date('2025-06-15T08:00:00+07:00');
+const WEDDING_DATE = new Date('2025-11-15T08:00:00+07:00');
 
 interface TimeLeft {
   days: number;
@@ -71,7 +71,7 @@ export default function Countdown() {
             Hitung Mundur
           </h2>
           <p className="font-cormorant text-dark-brown/60 text-lg mb-10">
-            Sabtu, 15 Juni 2025
+            Sabtu, 15 November 2025
           </p>
 
           {isPast ? (

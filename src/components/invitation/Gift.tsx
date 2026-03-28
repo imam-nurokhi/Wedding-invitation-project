@@ -14,13 +14,13 @@ const accounts: BankAccount[] = [
   {
     bank: 'Bank BCA',
     accountNumber: '1234567890',
-    accountName: 'Rizky Ahmad Fauzi',
+    accountName: 'Muhammad Ichsan',
     color: 'from-blue-600 to-blue-400',
   },
   {
     bank: 'Bank Mandiri',
     accountNumber: '0987654321',
-    accountName: 'Anisa Rahma Putri',
+    accountName: 'Wulan Rahayu',
     color: 'from-yellow-600 to-yellow-400',
   },
 ];

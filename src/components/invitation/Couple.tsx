@@ -72,25 +72,25 @@ function PersonCard({ person, delay = 0 }: { person: Person; delay?: number }) {
 
 export default function Couple() {
   const groom: Person = {
-    name: 'Rizky Ahmad Fauzi',
-    nickname: 'Rizky',
+    name: 'Muhammad Ichsan',
+    nickname: 'Ichsan',
     description: 'Putra pertama yang tumbuh dengan penuh cinta dan harapan keluarga.',
-    fatherName: 'Bapak Ahmad Fauzi',
-    motherName: 'Ibu Siti Nurhaliza',
-    instagram: '@rizkyahmad_',
-    initials: 'R',
+    fatherName: 'Bapak Deni Setiawan',
+    motherName: 'Ibu Endang Susilawati',
+    instagram: '@muhammadichsan_',
+    initials: 'I',
     gradientFrom: '#8B6F47',
     gradientTo: '#C8A97C',
   };
 
   const bride: Person = {
-    name: 'Anisa Rahma Putri',
-    nickname: 'Anisa',
+    name: 'Wulan Rahayu',
+    nickname: 'Wulan',
     description: 'Putri yang cantik hati, tumbuh menjadi wanita yang anggun dan berbudi.',
-    fatherName: 'Bapak Rahmat Hidayat',
-    motherName: 'Ibu Dewi Lestari',
-    instagram: '@anisarahmaputri',
-    initials: 'A',
+    fatherName: 'Bapak Agus Rahayu',
+    motherName: 'Ibu Sri Mulyani',
+    instagram: '@wulanrahayu_',
+    initials: 'W',
     gradientFrom: '#C8A97C',
     gradientTo: '#E8C99A',
   };

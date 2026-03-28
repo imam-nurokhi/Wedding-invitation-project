@@ -2,12 +2,12 @@
 import { motion } from 'framer-motion';
 
 const galleries = [
-  { id: 1, gradient: 'from-rose-gold to-gold', label: 'R & A', size: 'large' },
+  { id: 1, gradient: 'from-rose-gold to-gold', label: 'I & W', size: 'large' },
   { id: 2, gradient: 'from-dark-brown to-wedding-brown', label: '♥', size: 'small' },
   { id: 3, gradient: 'from-blush to-rose-gold', label: '2025', size: 'small' },
   { id: 4, gradient: 'from-wedding-brown to-rose-gold', label: 'Love', size: 'large' },
-  { id: 5, gradient: 'from-gold to-cream', label: 'R', size: 'small' },
-  { id: 6, gradient: 'from-rose-gold to-dark-brown', label: 'A', size: 'small' },
+  { id: 5, gradient: 'from-gold to-cream', label: 'I', size: 'small' },
+  { id: 6, gradient: 'from-rose-gold to-dark-brown', label: 'W', size: 'small' },
 ];
 
 function GalleryItem({ item, index }: { item: typeof galleries[0]; index: number }) {
