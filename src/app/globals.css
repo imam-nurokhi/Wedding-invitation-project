@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rose-gold: #C8A97C;
+  --blush: #F5E6D3;
+  --brown: #8B4513;
+  --cream: #FDF8F0;
+  --dark-brown: #4A2C0A;
+  --gold: #D4AF37;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  overflow-x: hidden;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-great-vibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Ornament patterns */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--rose-gold));
+}
+
+.ornament-divider::after {
+  background: linear-gradient(to left, transparent, var(--rose-gold));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rose-gold);
+  border-radius: 3px;
+}
+
+/* Cover section background pattern */
+.bg-pattern {
+  background-color: var(--cream);
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(200, 169, 124, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(200, 169, 124, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(245, 230, 211, 0.3) 0%, transparent 60%);
+}
+
+/* Section transitions */
+.section-fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gold text */
+.text-gold {
+  color: var(--rose-gold);
+}
+
+/* Gradient backgrounds */
+.bg-wedding-gradient {
+  background: linear-gradient(135deg, #FDF8F0 0%, #F5E6D3 50%, #FDF8F0 100%);
+}
+
+.bg-rose-gradient {
+  background: linear-gradient(135deg, #C8A97C, #E8C99A, #C8A97C);
+}
+
+/* Card styles */
+.wedding-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(200, 169, 124, 0.15);
+  border: 1px solid rgba(200, 169, 124, 0.2);
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #C8A97C, #D4AF37);
+  color: white;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(200, 169, 124, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200, 169, 124, 0.6);
+}
+
+/* Cover overlay */
+.cover-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(253, 248, 240, 0.95) 0%,
+    rgba(245, 230, 211, 0.85) 40%,
+    rgba(200, 169, 124, 0.1) 70%,
+    rgba(253, 248, 240, 0.95) 100%
+  );
+}
+
+/* Bismillah styling */
+.bismillah {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: var(--rose-gold);
+  text-align: center;
+}
+
+/* Love story timeline */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--rose-gold) 10%, var(--rose-gold) 90%, transparent);
+  transform: translateX(-50%);
+}
+
+/* Countdown box */
+.countdown-box {
+  background: linear-gradient(135deg, rgba(200, 169, 124, 0.1), rgba(245, 230, 211, 0.3));
+  border: 1px solid rgba(200, 169, 124, 0.3);
+  border-radius: 12px;
+  padding: 16px;
+  min-width: 80px;
+  text-align: center;
+}
+
+/* Gallery placeholder */
+.gallery-placeholder {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Admin styles */
+.admin-sidebar {
+  background: linear-gradient(180deg, #4A2C0A 0%, #8B4513 100%);
+}
+
+/* Floating music player */
+.music-player {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 50;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-gold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(200, 169, 124, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(200, 169, 124, 0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-gold {
+  animation: pulse-gold 2s ease-in-out infinite;
+}
+
+/* SVG ornament */
+.floral-ornament {
+  color: var(--rose-gold);
+  opacity: 0.6;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  .bismillah {
+    font-size: 1.5rem;
+  }
+}
