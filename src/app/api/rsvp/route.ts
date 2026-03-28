@@ -2,21 +2,30 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+interface RSVPEntry {
+  id: string;
+  name: string;
+  attendance: string;
+  people: number;
+  message: string;
+  date: string;
+}
+
 const dataPath = path.join(process.cwd(), 'data', 'rsvp.json');
 
-function readRsvp() {
+function readRsvp(): RSVPEntry[] {
   try {
     if (!fs.existsSync(dataPath)) {
       fs.writeFileSync(dataPath, '[]', 'utf-8');
     }
     const data = fs.readFileSync(dataPath, 'utf-8');
-    return JSON.parse(data);
+    return JSON.parse(data) as RSVPEntry[];
   } catch {
     return [];
   }
 }
 
-function writeRsvp(data: unknown[]) {
+function writeRsvp(data: RSVPEntry[]): void {
   fs.writeFileSync(dataPath, JSON.stringify(data, null, 2), 'utf-8');
 }
 
@@ -59,7 +68,7 @@ export async function DELETE(request: NextRequest) {
     const id = searchParams.get('id');
     if (!id) return NextResponse.json({ error: 'ID required' }, { status: 400 });
     const rsvps = readRsvp();
-    const filtered = rsvps.filter((r: { id: string }) => r.id !== id);
+    const filtered = rsvps.filter((r: RSVPEntry) => r.id !== id);
     writeRsvp(filtered);
     return NextResponse.json({ success: true });
   } catch {

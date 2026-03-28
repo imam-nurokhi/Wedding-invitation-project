@@ -2,21 +2,28 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+interface WishEntry {
+  id: string;
+  name: string;
+  message: string;
+  date: string;
+}
+
 const dataPath = path.join(process.cwd(), 'data', 'wishes.json');
 
-function readWishes() {
+function readWishes(): WishEntry[] {
   try {
     if (!fs.existsSync(dataPath)) {
       fs.writeFileSync(dataPath, '[]', 'utf-8');
     }
     const data = fs.readFileSync(dataPath, 'utf-8');
-    return JSON.parse(data);
+    return JSON.parse(data) as WishEntry[];
   } catch {
     return [];
   }
 }
 
-function writeWishes(data: unknown[]) {
+function writeWishes(data: WishEntry[]): void {
   fs.writeFileSync(dataPath, JSON.stringify(data, null, 2), 'utf-8');
 }
 
@@ -57,7 +64,7 @@ export async function DELETE(request: NextRequest) {
     const id = searchParams.get('id');
     if (!id) return NextResponse.json({ error: 'ID required' }, { status: 400 });
     const wishes = readWishes();
-    const filtered = wishes.filter((w: { id: string }) => w.id !== id);
+    const filtered = wishes.filter((w: WishEntry) => w.id !== id);
     writeWishes(filtered);
     return NextResponse.json({ success: true });
   } catch {
